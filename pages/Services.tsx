@@ -2,13 +2,19 @@ import React from 'react';
 import { Project, Service } from '../types';
 import { ArrowUpRight, Code2, Palette, Database, Smartphone } from 'lucide-react';
 
+// Import local images
+import HealthyHeartImg from '../assets/services/heaalthy.png';
+import RescueRouteImg from '../assets/services/image.png';
+import HospitalMgmtImg from '../assets/services/Hospitalmgmt.jpg';
+import BluePixelsImg from '../assets/services/BluePixels.png';
+
 const projects: Project[] = [
   {
     id: '1',
     title: 'Healthy Heart Blood Bank',
     category: 'PHP / MySQL',
     description: 'A dedicated donor-recipient bridge application featuring a comprehensive blood bank management system and database optimization.',
-    imageUrl: './assets/services/heaalthy.png',
+    imageUrl: HealthyHeartImg,
     link: 'https://github.com/samyamwho/HealthyHeart'
   },
   {
@@ -16,14 +22,15 @@ const projects: Project[] = [
     title: 'Rescue Route',
     category: 'Flutter / Mobile App',
     description: 'An Uber-like ambulance service application designed to streamline emergency booking and real-time tracking for rapid response.',
-    imageUrl: './assets/services/image.png',
-    link: 'https://github.com/samyamwho/Rescue_Route' // Placeholder if no specific link
+    imageUrl: RescueRouteImg,
+    link: 'https://github.com/samyamwho/Rescue_Route'
   },
   {
     id: '3',
     title: 'School Management Portal',
     category: 'React / Frontend',
     description: 'A responsive academic platform featuring event management, resource sharing, and accessible interfaces for students and staff.',
+    // This one is an external URL, no import needed
     imageUrl: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2600&auto=format&fit=crop',
     link: 'https://github.com/samyamwho'
   },
@@ -32,15 +39,15 @@ const projects: Project[] = [
     title: 'Hospital Management System',
     category: 'Python / OOP',
     description: 'Desktop application for managing patient records, doctor schedules, and billing history to increase operational efficiency.',
-    imageUrl: './assets/services/Hospitalmgmt.jpg',
+    imageUrl: HospitalMgmtImg,
     link: 'https://github.com/samyamwho'
   },
   {
     id: '5',
-    title: 'Blue Pixels Wedsite development',
+    title: 'Blue Pixels Website Development',
     category: 'React / Frontend',
     description: 'Developed visual concepts and social media graphics for diverse clients, ensuring consistent brand impact and engagement.',
-    imageUrl: './assets/services/BluePixels.png',
+    imageUrl: BluePixelsImg,
     link: 'https://bluepixelsdesign.com/'
   }
 ];

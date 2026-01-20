@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { NavigationLink } from '../types';
+import myphoto from '../assets/me2.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -38,7 +39,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="hidden md:flex justify-end animate-in slide-in-from-right-10 duration-1000 fade-in-delay-5">
           <img
-            src="/assets/me2.jpg"
+            src={myphoto}
             alt="Developer portrait"
             className="w-full max-w-xs lg:max-w-sm xl:max-w-md rounded-xl shadow-2xl object-cover aspect-[3/4]"
           />
